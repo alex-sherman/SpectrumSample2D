@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net46</TargetFramework>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Platforms>x86</Platforms>
+    <Configurations>Debug;Release;Steam-Debug;Steam-Release</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <OutputPath>bin\Debug</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DefineConstants></DefineConstants>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Steam-Debug|x86'">
+    <DefineConstants>DEBUG;TRACE;STEAM;STEAMWORKS_WIN</DefineConstants>
+    <OutputPath>bin\SteamDebug</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Steam-Release|x86'">
+    <DefineConstants>STEAM;STEAMWORKS_WIN</DefineConstants>
+    <OutputPath>bin\SteamRelease</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**/.git" />
+    <None Remove="**/.gitignore" />
+    <None Remove="steam_appid.txt" />
+    <Content Include="Content\**" Exclude="Content\**\*.fx;Content\**\*.fxh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spectrum\Spectrum.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\Spectrum\Dependencies\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\Spectrum\Dependencies\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg">
+      <HintPath>..\..\Spectrum\Dependencies\Svg.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <MGFXPath>..\Spectrum\Dependencies\Utils\2MGFX</MGFXPath>
+  </PropertyGroup>
+  <Import Project="..\Spectrum\mgfx.targets.xml" />
+</Project>
