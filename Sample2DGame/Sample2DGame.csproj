@@ -40,13 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
-      <HintPath>..\..\Spectrum\Dependencies\MonoGame.Framework.dll</HintPath>
+      <HintPath>..\Spectrum\Dependencies\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
-      <HintPath>..\..\Spectrum\Dependencies\protobuf-net.dll</HintPath>
+      <HintPath>..\Spectrum\Dependencies\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="Svg">
-      <HintPath>..\..\Spectrum\Dependencies\Svg.dll</HintPath>
+      <HintPath>..\Spectrum\Dependencies\Svg.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup>
