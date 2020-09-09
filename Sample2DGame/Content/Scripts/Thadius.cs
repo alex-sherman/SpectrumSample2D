@@ -1,5 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
+﻿using Microsoft.Xna.Framework.Input;
 using Spectrum.Framework;
 using Spectrum.Framework.Entities;
 using Spectrum.Framework.Input;
@@ -11,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace Sample2DGame
 {
-    [LoadableType]
     public class Thadius : Component<GameObject2D>, IUpdate
     {
         public override void Initialize(Entity e)
@@ -32,7 +30,7 @@ namespace Sample2DGame
             if (InputState.Current.IsKeyDown(Keys.E))
                 P.Rotation -= dt * multiplier;
             if (InputState.Current.IsKeyDown(Keys.W))
-                P.Position += Vector2.Transform(Vector2.UnitY * dt * 500 * multiplier, Matrix.CreateRotationZ(P.Rotation));
+                P.Position += Vector2.UnitY.Rotate(P.Rotation) * dt * 500 * multiplier;
         }
     }
 }

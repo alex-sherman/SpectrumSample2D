@@ -9,26 +9,38 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spectrum", "Spectrum\Spectr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
+		Steam-Debug|Any CPU = Steam-Debug|Any CPU
 		Steam-Debug|x86 = Steam-Debug|x86
+		Steam-Release|Any CPU = Steam-Release|Any CPU
 		Steam-Release|x86 = Steam-Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Debug|x86.ActiveCfg = Debug|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Debug|x86.Build.0 = Debug|x86
+		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Release|Any CPU.ActiveCfg = Release|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Release|x86.ActiveCfg = Release|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Release|x86.Build.0 = Release|x86
+		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Debug|Any CPU.ActiveCfg = Steam-Debug|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Debug|x86.ActiveCfg = Steam-Debug|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Debug|x86.Build.0 = Steam-Debug|x86
+		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Release|Any CPU.ActiveCfg = Steam-Release|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Release|x86.ActiveCfg = Steam-Release|x86
 		{C618D658-B77D-42D7-A8DB-3B38DE9CCC67}.Steam-Release|x86.Build.0 = Steam-Release|x86
+		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Debug|x86.ActiveCfg = Debug|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Debug|x86.Build.0 = Debug|x86
+		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Release|Any CPU.ActiveCfg = Release|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Release|x86.ActiveCfg = Release|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Release|x86.Build.0 = Release|x86
+		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Debug|Any CPU.ActiveCfg = Steam-Debug|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Debug|x86.ActiveCfg = Steam-Debug|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Debug|x86.Build.0 = Steam-Debug|x86
+		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Release|Any CPU.ActiveCfg = Steam-Release|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Release|x86.ActiveCfg = Steam-Release|x86
 		{05240634-444C-4A37-B403-98FEAFCCDDC0}.Steam-Release|x86.Build.0 = Steam-Release|x86
 	EndGlobalSection
